@@ -25,8 +25,7 @@
         
         <tr>
           <td class="docs">
-            <p>Go supports <em>constants</em> of character, string, boolean,
-and numeric values.</p>
+            <p>В Go есть символьные, строковые, логические и численные <em>константы</em> - неизменяемые значения.</p>
 
           </td>
           <td class="code empty leading">
@@ -40,7 +39,7 @@ and numeric values.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/T5sj0eINnp"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/DkQNAI0_C3"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -62,7 +61,7 @@ and numeric values.</p>
         
         <tr>
           <td class="docs">
-            <p><code>const</code> declares a constant value.</p>
+            <p>Ключевое слово <code>const</code> определяет константу.</p>
 
           </td>
           <td class="code leading">
@@ -88,8 +87,7 @@ and numeric values.</p>
         
         <tr>
           <td class="docs">
-            <p>A <code>const</code> statement can appear anywhere a <code>var</code>
-statement can.</p>
+            <p>Опрелелять константу можно везде, где можно определять переменную.</p>
 
           </td>
           <td class="code leading">
@@ -102,8 +100,8 @@ statement can.</p>
         
         <tr>
           <td class="docs">
-            <p>Constant expressions perform arithmetic with
-arbitrary precision.</p>
+            <p>Константы могут определяться арифметическими выражениями,
+вычисляемыми с подходящей точностью.</p>
 
           </td>
           <td class="code leading">
@@ -117,8 +115,8 @@ arbitrary precision.</p>
         
         <tr>
           <td class="docs">
-            <p>A numeric constant has no type until it&rsquo;s given
-one, such as by an explicit cast.</p>
+            <p>Численная константа не имеет типа, пока его явно не обозначили,
+например, явным преобразованием типов.</p>
 
           </td>
           <td class="code leading">
@@ -131,10 +129,9 @@ one, such as by an explicit cast.</p>
         
         <tr>
           <td class="docs">
-            <p>A number can be given a type by using it in a
-context that requires one, such as a variable
-assignment or function call. For example, here
-<code>math.Sin</code> expects a <code>float64</code>.</p>
+            <p>Если константу использовать в качестве аргумента функции или
+в присваивании, она используется как значение соответствующего типа.
+Например, <code>math.Sin</code> ожидает тип <code>float64</code>.</p>
 
           </td>
           <td class="code">

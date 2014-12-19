@@ -1,5 +1,5 @@
 $ go run variables.go
-initial
+init value
 1 2
 true
 0

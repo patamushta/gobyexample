@@ -1,6 +1,6 @@
-// In Go, _variables_ are explicitly declared and used by
-// the compiler to e.g. check type-correctness of function
-// calls.
+// В Go _переменные_ должны быть явно объявлены. Это
+// позволяет во время компиляции проверять правильность параметров
+// функций, совместимость операндов в операциях и т.д.
 
 package main
 
@@ -8,27 +8,28 @@ import "fmt"
 
 func main() {
 
-    // `var` declares 1 or more variables.
-    var a string = "initial"
+    // `var` объявляет и определяет 1 или более переменную.
+    var a string = "init value"
     fmt.Println(a)
 
-    // You can declare multiple variables at once.
+    // Можно объявлять сразу несколько переменных.
     var b, c int = 1, 2
     fmt.Println(b, c)
 
-    // Go will infer the type of initialized variables.
+    // Если указывать начальное значение, возможен и автоматический вывод типа переменной.
     var d = true
     fmt.Println(d)
 
-    // Variables declared without a corresponding
-    // initialization are _zero-valued_. For example, the
-    // zero value for an `int` is `0`.
+    // Переменные, объявленные без начального значения будут
+    // автоматически инициализированы
+    // _нулевым значением_ для данного типа. К примеру, для целых чисел это `0`,
+    // а для логических переменных - false.
     var e int
     fmt.Println(e)
 
-    // The `:=` syntax is shorthand for declaring and
-    // initializing a variable, e.g. for
-    // `var f string = "short"` in this case.
+    // Если задавается начальное значение, то можно воспользоваться
+    // краткой формой объявления. В примере записана краткая форма
+    // инструкции `var f string = "short"`
     f := "short"
     fmt.Println(f)
 }
